@@ -1,3 +1,4 @@
+--get term mentions for each publication 
 WITH term_counts AS(SELECT merged_id, year,
 CASE WHEN REGEXP_CONTAINS(LOWER(title_english),"trust") OR REGEXP_CONTAINS(LOWER(abstract_english), "trust") THEN 1 ELSE 0 END AS trust,
 CASE WHEN REGEXP_CONTAINS(LOWER(title_english),"explainable") OR REGEXP_CONTAINS(LOWER(abstract_english), "explainable") OR REGEXP_CONTAINS(LOWER(title_english),"explainability") OR REGEXP_CONTAINS(LOWER(abstract_english), "explainability") THEN 1 ELSE 0 END AS explainable,
@@ -15,6 +16,7 @@ CASE WHEN REGEXP_CONTAINS(LOWER(title_english),"transparency") OR REGEXP_CONTAIN
 FROM trusted_ml_research.trustworthy_ai_papers_0927
 WHERE year >= 2010 AND year <=2021),
 
+-get china affiliation for each publication 
 chn_label AS(SELECT merged_id, CASE WHEN country = "China" THEN 1 ELSE 0 end as chn_affil FROM trusted_ml_research.trustworthy_ai_papers_0927
 INNER JOIN gcp_cset_links_v2.paper_countries_merged USING(merged_id))
 
