@@ -16,7 +16,7 @@ CASE WHEN REGEXP_CONTAINS(LOWER(title_english),"transparency") OR REGEXP_CONTAIN
 FROM trusted_ml_research.trustworthy_ai_papers_0927
 WHERE year >= 2010 AND year <=2021),
 
--get china affiliation for each publication 
+--get china affiliation for each publication 
 chn_label AS(SELECT merged_id, CASE WHEN country = "China" THEN 1 ELSE 0 end as chn_affil FROM trusted_ml_research.trustworthy_ai_papers_0927
 INNER JOIN gcp_cset_links_v2.paper_countries_merged USING(merged_id))
 
