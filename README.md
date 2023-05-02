@@ -10,3 +10,8 @@ This repository contains the code to produce results in the CSET series on Trust
 * Figure 2.: [country_counts.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/country_counts.sql) and [ai_papers_bycountry.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/ai_papers_bycountry.sql)
 * Figure 3.: [term_counts_overtime.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/term_counts_overtime.sql)
 * Term Co-Occurrence Calculations: [generate_digraph_table.py](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/python/generate_digraph_table.py) and [term_coccurrence_table.py](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/python/term_coccurrence_table.py)
+
+
+## Trustworthy AI Keyword Research Clusters (Data Brief)
+
+### SQL 
