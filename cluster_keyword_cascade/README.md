@@ -46,9 +46,9 @@
   
  using the colored dots your graph will look like this:
 
-![plot](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/deeplearning_cascade_plot_colordots.png)
+![plot](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/trustworthy_cascade_rccolor.png)
 
 
 using the dash marker your graph will look like this:
 
-![plot](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/deeplearning_cascade_plot_lines.png)
+![plot](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/trustworthy_cascade_dashlines.png)
