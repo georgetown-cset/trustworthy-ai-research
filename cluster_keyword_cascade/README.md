@@ -35,8 +35,10 @@
         * **name**: top descriptive phrase
         These are the fields you need for the annotation of the nodes (colors & descriptions).
         
- 2. Generate the plot
+ 2. Generate the plot 
 
   ```
   $ ./generate_kw_plot.sh
   ```
+  
+  There are several paths you will need to configure in [generate_kw_plot.sh](cluster_keyword_cascade/generate_kw_plot.sh)
