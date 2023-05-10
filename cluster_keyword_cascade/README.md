@@ -6,6 +6,7 @@
 
     
     1. [Keyword Node Table Ouput](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_kw_counts_pcts_byyear.sql) ==> [node_table.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/node_table.csv)
+        
         Table Contents:
         * **np**: number of papers in the cluster
         * **year**: (group by year)
@@ -16,6 +17,7 @@
         These are the fields that you need to plot the nodes. 
 
     2. [Node Links Table](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_topic_links_byyear.sql) ==> [links_table.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/links_table.csv)
+        
         Table Contents:
         * **ref_count**: number of papers being cited (links)
         * **n2_year**: node 2 year
@@ -25,6 +27,7 @@
         These are the fields you need to plot the links.
 
     3. [Node Labels](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_colors_annotation.sql) ==> [rc_annotation.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/rc_annotation.csv)
+        
         Table Contents:
         * **cluster_id**: cluster ID 
         * **color**: cluster color in the map of science
