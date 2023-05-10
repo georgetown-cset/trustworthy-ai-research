@@ -7,10 +7,9 @@
     
     1. [Keyword Node Table Ouput](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_kw_counts_pcts_byyear.sql) ==> [node_table.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/node_table.csv)
 
-First Header  | Second Header
+np |  year  |  cluster_id  |  kw_count  |  percent_keyword
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell 
+total pub count | year  | cluster ID | number of keyword papers | percentage of keyword papers 
 
 
     3. [Node Links Table](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_topic_links_byyear.sql) ==> [links_table.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/links_table.csv)
