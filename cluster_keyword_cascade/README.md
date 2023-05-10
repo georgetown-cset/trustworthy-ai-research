@@ -41,4 +41,14 @@
   $ ./generate_kw_plot.sh
   ```
   
-  There are several paths you will need to configure in [generate_kw_plot.sh](cluster_keyword_cascade/generate_kw_plot.sh)
+  You will need to configure all paths to the files generated above in [generate_kw_plot.sh](cluster_keyword_cascade/generate_kw_plot.sh).
+  Additionally, there is the option to change the marker (use_dash_marker), remove that line if you would like to have the cluster color as the cluster marker, exmaples provided below.  
+  
+ using the colored dots your graph will look like this:
+
+![plot](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/deeplearning_cascade_plot_colordots.png)
+
+
+using the dash marker your graph will look like this:
+
+![plot](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/deeplearning_cascade_plot_lines.png)
