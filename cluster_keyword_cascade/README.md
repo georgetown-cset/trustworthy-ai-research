@@ -16,4 +16,18 @@
         These are the fields that you need to plot the nodes. 
 
     2. [Node Links Table](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_topic_links_byyear.sql) ==> [links_table.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/links_table.csv)
-    4. [Node Labels](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_colors_annotation.sql) ==> [rc_annotation.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/rc_annotation.csv)
+        Table Contents:
+        * **ref_count**: number of papers being cited (links)
+        * **n2_year**: node 2 year
+        * **n2**: node 2
+        * **n1**: node 1
+        * **n1_year**: node 1 year
+        These are the fields you need to plot the links.
+
+    3. [Node Labels](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_colors_annotation.sql) ==> [rc_annotation.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/rc_annotation.csv)
+        Table Contents:
+        * **cluster_id**: cluster ID 
+        * **color**: cluster color in the map of science
+        * **link**: hyperlink to the UI
+        * **name**: top descriptive phrase
+        These are the fields you need for the annotation of the nodes (colors & descriptions).
