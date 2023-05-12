@@ -26,7 +26,7 @@
         * **n1_year**: node 1 year
         These are the fields you need to plot the links.
 
-    3. [Node Labels](https://github.com/georgetown-cset/research-cluster-visuals/blob/main/keyword_cascade/sql/get_colors_annotation.sql) ==> [rc_annotation.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/rc_annotation.csv)
+    3. [Node Labels](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/generate_rc_annotation.sql) ==> [rc_annotation.csv](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/cluster_keyword_cascade/rc_annotation.csv)
         
         Table Contents:
         * **cluster_id**: cluster ID 
