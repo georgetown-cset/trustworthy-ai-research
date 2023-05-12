@@ -16,4 +16,5 @@ This repository contains the code to produce results in the CSET series on Trust
 
 ### SQL 
 * Top 25 Trustworthy AI Keyword Clusters: [top25_trust_ai_clusters.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/top25_trust_ai_clusters.sql)
+* Keyword Concentrations by Cluster: [cluster_term_concentrations.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/cluster_term_concentrations.sql)
 * [Keyword Cascade Plot](https://github.com/georgetown-cset/trustworthy-ai-research/tree/main/cluster_keyword_cascade)
