@@ -19,3 +19,4 @@ This repository contains the code to produce results in the CSET series on Trust
 * Keyword Concentrations by Cluster: [cluster_term_concentrations.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/cluster_term_concentrations.sql)
 * Total Cluster Paper Counts by Year: [cluster_totalcounts_byyear.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/cluster_totalcounts_byyear.sql)
 * [Keyword Cascade Plot](https://github.com/georgetown-cset/trustworthy-ai-research/tree/main/cluster_keyword_cascade)
+* Most RC Cited Keyword Papers: [most_cited_kw_pubs.sql](https://github.com/georgetown-cset/trustworthy-ai-research/blob/main/sql/most_cited_kwpubs.sql)
