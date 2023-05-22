@@ -57,11 +57,11 @@ INNER JOIN science_map_v2.dc5_cluster_assignment_stable ON n2_id = merged_id
 WHERE cluster_id IN(SELECT n1 FROM keyword_references) AND cluster_id NOT IN(SELECT cluster_id FROM select_rcs)),
 
 SELECT
-  COUNT(DISTINCT n2_id) as ref_count, topic_id, n1, title_english, abstract_english
+  COUNT(DISTINCT n2_id) as cit_count, topic_id, n1, title_english, abstract_english
 FROM
   keyword_references
   INNER JOIN `gcp_cset_links_v2.corpus_merged` ON topic_id = merged_id
   WHERE n2_id NOT IN(SELECT n2_id FROM restricted_ids) AND n1 IN(SELECT cluster_id FROM select_rcs)
   GROUP BY topic_id, n1,title_english, abstract_english
-ORDER BY ref_count DESC
+ORDER BY cit_count DESC
 LIMIT 50
