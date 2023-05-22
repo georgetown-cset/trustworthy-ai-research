@@ -57,20 +57,6 @@ restricted_ids AS(SELECT n2_id FROM keyword_references
 INNER JOIN science_map_v2.dc5_cluster_assignment_stable ON n2_id = merged_id
 WHERE cluster_id IN(SELECT n1 FROM keyword_references) AND cluster_id NOT IN(SELECT cluster_id FROM select_rcs)),
 
-  --link the keyword references to their research cluster id
-  refs_to_clusters AS(
-  SELECT
-    COUNT(DISTINCT topic_id) AS ref_count,
-    merged_id
-  FROM
-    keyword_references
-  INNER JOIN
-    science_map_v2.dc5_cluster_assignment_stable
-  ON
-    n2_id = merged_id
-  GROUP BY
-  merged_id)
-  --limit the years and number of references that constitute links
 SELECT
   COUNT(DISTINCT n2_id) as ref_count, topic_id, n1, title_english, abstract_english
 FROM
