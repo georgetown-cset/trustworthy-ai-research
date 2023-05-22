@@ -10,8 +10,7 @@ WHERE year >= 2010 AND year <= 2021 AND (trusted_ml_research.trustworthy_keyword
 papers_to_clusters AS(SELECT * FROM keyword_papers
   INNER JOIN science_map_v2.dc5_cluster_assignment_stable ON merged_id = topic_id),
 
-  --select the top 20 research clusters with the highest percentage of keywords
-  --top 20 is somewhat arbitrary so adjust this for how many distinct clusters you want to display
+  --select the top 18 research clusters with the highest percentage of keywords
   select_rcs AS(
   SELECT
     COUNT(DISTINCT rc_table.merged_id) AS total_np,
@@ -29,7 +28,6 @@ papers_to_clusters AS(SELECT * FROM keyword_papers
     percent_keyword DESC
   LIMIT
     18),
-  --get the top 18
   --get the keyword publications from node 1 (n1) and link them to their references
   keyword_references AS(
   SELECT
@@ -53,6 +51,7 @@ papers_to_clusters AS(SELECT * FROM keyword_papers
   ON
     topic_id = dc5.merged_id),
 
+--find ids that are not in "node 1" clusters but are in the selected clusters (i.e., they are in "topic" clusters) 
 restricted_ids AS(SELECT n2_id FROM keyword_references 
 INNER JOIN science_map_v2.dc5_cluster_assignment_stable ON n2_id = merged_id
 WHERE cluster_id IN(SELECT n1 FROM keyword_references) AND cluster_id NOT IN(SELECT cluster_id FROM select_rcs)),
