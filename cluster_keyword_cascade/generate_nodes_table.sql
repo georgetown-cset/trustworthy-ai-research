@@ -1,4 +1,6 @@
 
+--saved as trusted_ml_research.trust_node_table_040323 
+
 WITH
 ai_pubs AS(SELECT cset_id as merged_id, year FROM `article_classification.predictions_2023_01_19` 
 --INNER JOIN gcp_cset_links_v2.corpus_merged corpus ON cset_id = merged_id
